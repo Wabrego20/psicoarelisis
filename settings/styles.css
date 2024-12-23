@@ -77,6 +77,7 @@ main {
     align-items: center;
     width: 100%;
 }
+
 footer {
     background-color: var(--hover);
     width: 100%;
@@ -85,20 +86,24 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
     h6 {
         color: var(--primario);
         max-width: 95%;
         margin: 10px 0;
     }
-    i{
+
+    i {
         font-size: 24px;
         margin: 5px 10px;
         cursor: pointer;
     }
-    i:hover{
+
+    i:hover {
         color: var(--secundario);
     }
 }
+
 .btn {
     text-decoration: none;
     font-weight: bold;
@@ -106,6 +111,7 @@ footer {
     margin: 5px;
     border-radius: 5px;
 }
+
 .__cita {
     background-color: var(--secundario);
     color: var(--primario);
@@ -207,6 +213,7 @@ footer {
                 padding: 0 10PX;
                 border-radius: 5px;
             }
+
             input[type='submit'] {
                 width: 100%;
                 margin: 5px;
@@ -218,7 +225,8 @@ footer {
                 cursor: pointer;
                 border-radius: 5px;
             }
-            input[type='submit']:hover{
+
+            input[type='submit']:hover {
                 color: var(--secundario);
                 background-color: var(--fondo);
                 box-shadow: 0 0 5px var(--secundario);
@@ -233,10 +241,42 @@ footer {
                 padding: 10PX;
                 border-radius: 5px;
             }
-            input[type='text']:focus, textArea:focus{
+
+            input[type='text']:focus,
+            textArea:focus {
                 outline: 1px solid var(--primario);
                 box-shadow: 0 0 5px var(--primario);
             }
+        }
+    }
+}
+.msn{
+    max-width: 95%;
+}
+.calendario {
+    width: 400px;
+    max-width: 95%;
+
+    ul {
+        color: var(--primario);
+        font-weight: bold;
+        padding: 0;
+        text-align: center;
+        list-style: none;
+        display: grid;
+        border-left: 1px solid var(--secundario);
+        border-right: 1px solid var(--secundario);
+        border-bottom: 1px solid var(--secundario);
+        border-radius: 5px;
+        grid-template-columns: repeat(7, 1fr);
+
+        .primerDia {
+            grid-column-start: 3;
+        }
+
+        lo {
+            background-color: var(--secundario);
+            border-radius: 5px 5px 0 0;
         }
     }
 }
