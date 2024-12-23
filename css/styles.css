@@ -93,7 +93,7 @@ footer {
     font-weight: bold;
     padding: 10px;
     margin: 5px;
-
+    border-radius: 5px;
 }
 
 .__cita {
@@ -195,6 +195,7 @@ footer {
                 border: 1px solid var(--primario);
                 height: 40px;
                 padding: 0 10PX;
+                border-radius: 5px;
             }
             input[type='submit'] {
                 width: 100%;
@@ -205,6 +206,7 @@ footer {
                 color: var(--primario);
                 font-weight: bold;
                 cursor: pointer;
+                border-radius: 5px;
             }
             input[type='submit']:hover{
                 color: var(--secundario);
@@ -219,6 +221,7 @@ footer {
                 border: 1px solid var(--primario);
                 height: 80px;
                 padding: 10PX;
+                border-radius: 5px;
             }
             input[type='text']:focus, textArea:focus{
                 outline: 1px solid var(--primario);
