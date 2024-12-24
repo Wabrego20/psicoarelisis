@@ -198,6 +198,23 @@ footer {
     form {
         width: 450px;
         max-width: 95%;
+        input[type='submit'] {
+            width: 95%;
+            margin: 5px auto;
+            border: none;
+            height: 40px;
+            background-color: var(--secundario);
+            color: var(--primario);
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        input[type='submit']:hover {
+            color: var(--secundario);
+            background-color: var(--fondo);
+            box-shadow: 0 0 5px var(--secundario);
+        }
 
         .btn_txt {
             width: 100%;
@@ -249,37 +266,50 @@ footer {
             }
         }
     }
+    .date, .time{
+        margin: 10px auto;
+        color: var(--primario);
+        font-weight: bold;
+        #date, #time{
+            font-weight: bold;
+            border-radius: 5px;
+            border: 1px solid var(--primario);
+            cursor: pointer;
+            width: 95%;
+            height: 40px;
+            transition: 0.2s ease-in-out;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+        #date:hover, #time:hover{
+            scale: 0.99;
+        }
+    }
 }
 .msn{
     max-width: 95%;
 }
-.calendario {
-    width: 400px;
-    max-width: 95%;
 
-    ul {
+.sobre_mi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    p{
+        width: 400px;
+        text-align: justify;
         color: var(--primario);
         font-weight: bold;
-        padding: 0;
-        text-align: center;
-        list-style: none;
-        display: grid;
-        border-left: 1px solid var(--secundario);
-        border-right: 1px solid var(--secundario);
-        border-bottom: 1px solid var(--secundario);
-        border-radius: 5px;
-        grid-template-columns: repeat(7, 1fr);
-
-        .primerDia {
-            grid-column-start: 3;
-        }
-
-        lo {
-            background-color: var(--secundario);
-            border-radius: 5px 5px 0 0;
-        }
+        margin: 0 50px;
+    }
+    img{
+        width: 300px;
+        max-width: 95%;
+        border-radius: 50%;
     }
 }
+
 
 @media (max-width: 700px) {
     header {

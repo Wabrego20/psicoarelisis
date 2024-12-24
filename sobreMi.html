@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pide tu Cita | PsicoArelisSis</title>
+    <title>Sobre Mi | PsicoArelisSis</title>
     <link rel="stylesheet" href="settings/styles.css">
     <link rel="stylesheet" href="settings/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -19,48 +19,36 @@
         <nav class="menu">
             <ul>
                 <li><a href="">Inicio</a></li>
-                <li><a href="sobreMi.html">Sobre Mí</a></li>
+                <li><a class="active" href="#">Sobre Mí</a></li>
                 <li><a href="">Servicios</a></li>
                 <li><a href="index.html">Blog</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <a href="cita.html" class="btn __cita">Pide tu cita</a>
     </header>
     <main>
         <div class="blog">
-            <h1>Pide tu cita</h1>
+            <h1>Sobre Mi</h1>
         </div>
-        <div class="dialog">
-            <div class="msn">
-                <h2>Sesión Individual</h2><br>
-                <p><i class="fa-regular fa-clock"></i> 55 minutos <br><br>
-                    <i class="fa-solid fa-video"></i> Virtual <br><br>
-                    Los detalles se proporsionan al confirmar la cita.
-                </p>
+        <div class="sobre_mi">
+            <p>¡Bienvenidos a PsicoArelisSis! Soy Arelis Quintero, psicóloga con [X] años de experiencia en el campo de la
+                psicología
+                general. <br><br>Mi pasión es ayudar a las personas a comprender mejor sus pensamientos, emociones y
+                comportamientos para
+                que puedan vivir vidas más plenas y satisfactorias. <br><br> A lo largo de mi carrera, he trabajado con una
+                variedad de
+                clientes, abordando temas como la <i>ansiedad, la depresión, el estrés y el desarrollo personal</i>. <br><br>En
+                PsicoArelisSis,
+                mi objetivo es proporcionar recursos y apoyo accesibles para todos aquellos que buscan mejorar su
+                bienestar mental.<br><br>
+                Gracias por visitar mi página, y espero que encuentres aquí la inspiración y las herramientas que
+                necesitas para tu
+                viaje hacia una mejor salud mental.
+            </p>
+            <div class="perfil">
+                <img src="img/perfil.png" alt="fotoPerfil">
             </div>
-            <form action="">
-                <div class="date">
-                    <label for="date">Selecciona una fecha:</label>
-                    <input type="date" id="date" name="date" required>
-                </div>
-                <div class="time">
-                    <label for="time">Selecciona una hora:</label>
-                    <select id="time" name="time" required>
-                        <option value="">Seleccione</option>
-                        <option value="06:00">06:00</option>
-                        <option value="07:00">07:00</option>
-                        <option value="08:00">08:00</option>
-                        <option value="09:00">09:00</option>
-                        <option value="10:00">10:00</option>
-                        <option value="11:00">11:00</option>
-                        <option value="12:00">12:00</option>
-                        <option value="13:00">13:00</option>
-                        <option value="14:00">14:00</option>
-                        <option value="15:00">15:00</option>
-                    </select>
-                </div>
-                <input type="submit" value="Solicitar">
-            </form>
         </div>
     </main>
     <footer>
