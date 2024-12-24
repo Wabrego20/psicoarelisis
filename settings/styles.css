@@ -298,6 +298,7 @@ footer {
     margin: 10px;
     p{
         width: 400px;
+        max-width: 95%;
         text-align: justify;
         color: var(--primario);
         font-weight: bold;
