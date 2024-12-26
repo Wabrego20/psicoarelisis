@@ -163,6 +163,9 @@ main {
             text-align: justify;
             margin: 10px auto;
             color: var(--primario);
+            ul{
+                border: none;
+            }
 
             h4 {
                 font-style: oblique;
