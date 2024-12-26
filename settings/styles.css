@@ -428,7 +428,6 @@ footer {
 
     .msn {
         position: relative;
-        background-color: #e2e2e2;
         width: 100%;
         height: 300px;
         margin: 10px auto;
@@ -452,7 +451,7 @@ footer {
 
         img {
             border-radius: 0;
-            min-width: 100%;
+            width: 100%;
             height: 100%;
             position: absolute;
             left: 50%;
