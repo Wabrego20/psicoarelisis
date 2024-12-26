@@ -90,6 +90,67 @@ main {
     align-items: center;
     width: 100%;
 
+    .services {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+        div{
+            width: 280px;
+            max-width: 95%;
+            padding: 10px;
+            box-sizing: border-box;
+            box-shadow: 0 0 5px var(--secundario);
+            border-radius: 5px;
+            position: relative;
+            text-align: center;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            cursor: pointer;
+            transition: 0.2s ease-in-out;
+            h2 {
+                font-size: x-large;
+                color: var(--primario);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+    
+            i {
+                font-size: 200px;
+                max-width: 95%;
+                text-align: center;
+            }
+    
+            p {
+                font-size: medium;
+                width: 95%;
+                color: var(--secundario);
+                text-align: justify;
+                font-weight: bold;
+            }
+            .hidden{
+                display: none;
+            }
+            .show{
+                display: block;
+            }
+        }
+        div:hover{
+            background-color: var(--hover);
+            scale: 0.99;
+        }
+        div:active{
+            box-shadow: inset 0 0 10px var(--secundario);
+            scale: 0.99;
+        }
+    }
+
     .inicio {
         width: 100%;
         display: flex;
@@ -102,7 +163,8 @@ main {
             text-align: justify;
             margin: 10px auto;
             color: var(--primario);
-            h4{
+
+            h4 {
                 font-style: oblique;
             }
 
@@ -114,10 +176,12 @@ main {
         div {
             width: 400px;
             margin: 10px;
-            h3{
+
+            h3 {
                 text-align: center;
             }
-            p{
+
+            p {
                 width: 100%;
                 box-shadow: 0 0 5px var(--secundario);
                 text-align: justify;
@@ -127,8 +191,9 @@ main {
                 color: var(--primario);
                 background-color: var(--secundario);
                 font-weight: bold;
-                i{
-                    font-size: 85px;
+
+                i {
+                    font-size: 65px;
                     color: var(--error);
                     text-align: center;
                     width: 100%;
@@ -352,6 +417,15 @@ footer {
     margin: 20px auto;
     width: 100%;
 
+    p {
+        width: 400px;
+        max-width: 95%;
+        text-align: justify;
+        color: var(--primario);
+        font-weight: bold;
+        margin: 10px;
+    }
+
     .msn {
         position: relative;
         background-color: #e2e2e2;
@@ -387,19 +461,11 @@ footer {
         }
     }
 
-    p {
-        width: 400px;
-        max-width: 95%;
-        text-align: justify;
-        color: var(--primario);
-        font-weight: bold;
-        margin: 0 50px;
-    }
-
     img {
         width: 300px;
         max-width: 95%;
         border-radius: 50%;
+        margin: 10px;
     }
 }
 
