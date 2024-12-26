@@ -9,8 +9,8 @@
     --secundario: #0da1ae;
     --fondo: #ffffff;
     --hover: #e2e2e2;
-    --error:#420303;
-    --success:#034208;
+    --error: #420303;
+    --success: #034208;
 }
 
 body {
@@ -89,6 +89,54 @@ main {
     justify-content: start;
     align-items: center;
     width: 100%;
+
+    .inicio {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-wrap: wrap;
+
+        ol {
+            width: 95%;
+            text-align: justify;
+            margin: 10px auto;
+            color: var(--primario);
+            h4{
+                font-style: oblique;
+            }
+
+            li {
+                list-style: none;
+            }
+        }
+
+        div {
+            width: 400px;
+            margin: 10px;
+            h3{
+                text-align: center;
+            }
+            p{
+                width: 100%;
+                box-shadow: 0 0 5px var(--secundario);
+                text-align: justify;
+                border-radius: 5px;
+                padding: 10px;
+                box-sizing: border-box;
+                color: var(--primario);
+                background-color: var(--secundario);
+                font-weight: bold;
+                i{
+                    font-size: 85px;
+                    color: var(--error);
+                    text-align: center;
+                    width: 100%;
+                    margin: 10px auto;
+                }
+            }
+        }
+    }
 }
 
 footer {
@@ -385,10 +433,12 @@ footer {
         color: var(--hover);
         text-shadow: 0 0 10px var(--primario);
     }
+
     60% {
         color: var(--error);
         text-shadow: 0 0 10px var(--secundario);
     }
+
     80% {
         color: var(--success);
         text-shadow: 0 0 10px var(--hover);
