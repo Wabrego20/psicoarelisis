@@ -163,9 +163,6 @@ main {
             text-align: justify;
             margin: 10px auto;
             color: var(--primario);
-            ul{
-                border: none;
-            }
 
             h4 {
                 font-style: oblique;
@@ -480,7 +477,6 @@ footer {
     }
 
     ul {
-        border: 1px solid var(--primario);
         margin: auto;
         border-radius: 5px;
     }
