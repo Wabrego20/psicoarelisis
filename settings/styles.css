@@ -111,10 +111,11 @@ main {
             position: relative;
             width: 100%;
             height: 300px;
-            margin: 10px auto;
+            margin: 10px 0;
             display: flex;
             justify-content: center;
             align-items: center;
+            box-sizing: border-box;
 
             h1 {
                 position: absolute;
@@ -136,12 +137,11 @@ main {
             img {
                 width: 100%;
                 height: 300px;
-                border-radius: 0;
                 margin: 10px 0;
             }
         }
 
-        img {
+        .fotoPerfil {
             width: 300px;
             max-width: 100%;
             border-radius: 50%;
