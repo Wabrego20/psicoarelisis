@@ -539,37 +539,37 @@ footer {
 
 @keyframes example {
     0% {
-        background: radial-gradient(circle, #5e0d5c, #33FF57, #3357FF);
+        background: radial-gradient(circle, #d21ccf, #33FF57, #ce1212);
         -webkit-background-clip: text;
         color: transparent;
     }
 
     20% {
-        background: radial-gradient(circle, #ababac, #323023, #9c067e);
+        background: radial-gradient(circle, #e3e853, #ff1414, #ff14d0);
         -webkit-background-clip: text;
         color: transparent;
     }
 
     40% {
-        background: radial-gradient(circle, #1f1f22, #debb0c, #9c067e);
+        background: radial-gradient(ellipse, #ffd950, #45ffcd, #ff45da);
         -webkit-background-clip: text;
         color: transparent;
     }
 
     60% {
-        background: radial-gradient(linear, #c31509, #2f9300, #ccff13);
+        background: radial-gradient(ellipse, #ff2d1e, #51ff00, #d9ff4f);
         -webkit-background-clip: text;
         color: transparent;
     }
 
     80% {
-        background: radial-gradient(circle, #0707a4, #debb0c, #2ad5e1);
+        background: radial-gradient(circle, #d01aec, #ffd91b, #2ef1ff);
         -webkit-background-clip: text;
         color: transparent;
     }
 
     100% {
-        background: radial-gradient(circle, #1f1f22, #0cde0f, #9c067e);
+        background: radial-gradient(ellipse, #e2e2ff, #0cde0f, #ff00cc);
         -webkit-background-clip: text;
         color: transparent;
     }
