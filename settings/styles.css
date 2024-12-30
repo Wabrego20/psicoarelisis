@@ -20,6 +20,15 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    audio{
+        position: fixed;
+        bottom: 50%;
+        right: 10px;
+        width: 25px;
+        height: 25px;
+        box-shadow: 0 0 5px var(--secundario);
+        border-radius: 50%;
+    }
 }
 
 header {
@@ -147,7 +156,7 @@ main {
     }
     .caso_3{
         background-color: var(--success);
-        color: var(--error);
+        color: orange;
     }
     .caso_4{
         background-color: var(--secundario);
