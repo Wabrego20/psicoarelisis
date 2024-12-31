@@ -654,6 +654,6 @@ footer {
     position: absolute;
     color: red;
     animation: subir 5s infinite;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
   }
   

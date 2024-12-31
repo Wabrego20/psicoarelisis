@@ -72,12 +72,12 @@
     </footer>
     <script>
         const msn = document.querySelector('.msn');
-        const numHearts = 30;
+        const numHearts = 40;
 
         for (let i = 0; i < numHearts; i++) {
             const heart = document.createElement('i');
             heart.classList.add('fa-solid', 'fa-heart');
-            heart.style.left = `${Math.random() * 100}%`;
+            heart.style.left = `${Math.random() * 98}%`;
             heart.style.animationDuration = `${Math.random() * 5 + 2}s`;
             msn.appendChild(heart);
         }
