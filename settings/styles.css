@@ -641,7 +641,7 @@ footer {
       opacity: 1;
     }
     50% {
-      transform: scale(1.5) translateY(-50px);
+      transform: scale(1.5) translateY(-130px);
       opacity: 0.5;
     }
     100% {
@@ -653,7 +653,7 @@ footer {
   .fa-heart {
     position: absolute;
     color: red;
-    animation: subir 3s infinite;
+    animation: subir 5s infinite;
     animation-timing-function: ease-in-out;
   }
   
