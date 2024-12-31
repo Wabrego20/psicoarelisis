@@ -189,6 +189,9 @@ main {
             justify-content: center;
             align-items: center;
             box-sizing: border-box;
+            i{
+                position: absolute;
+            }
 
             h1 {
                 position: absolute;
