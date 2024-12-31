@@ -53,6 +53,7 @@
             <div class="msn">
                 <h1>Cada amanecer trae una nueva oportunidad para ser feliz.</h1>
                 <img src="img/amanece.png" alt="">
+                <i class="fa-solid fa-heart"></i>
             </div>
         </div>
     </main>
@@ -69,6 +70,18 @@
             <i class="fa-brands fa-telegram" title="clic para ir a telegram"></i>
         </div>
     </footer>
+    <script>
+        const msn = document.querySelector('.msn');
+        const numHearts = 20;
+
+        for (let i = 0; i < numHearts; i++) {
+            const heart = document.createElement('i');
+            heart.classList.add('fa-solid', 'fa-heart');
+            heart.style.left = `${Math.random() * 100}vw`;
+            heart.style.animationDuration = `${Math.random() * 3 + 2}s`;
+            msn.appendChild(heart);
+        }
+    </script>
 </body>
 
 </html>
