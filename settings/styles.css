@@ -20,7 +20,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    audio{
+
+    audio {
         position: fixed;
         bottom: 50%;
         right: 10px;
@@ -98,67 +99,140 @@ main {
     justify-content: start;
     align-items: center;
     width: 100%;
+
     .name_page {
         width: 100%;
         background-color: var(--hover);
         margin: 0;
         text-align: justify;
+
         h1 {
             font-size: 60px;
             color: var(--secundario);
             text-align: center;
             text-shadow: 0 0 3px var(--primario);
         }
+
         p {
             padding: 15px;
             color: var(--primario);
             font-weight: bold;
-        } 
-        h3,h4,ul li{
+        }
+
+        h3,
+        h4,
+        ul li {
             padding: 5px 15px;
-        } 
-        
+        }
+
     }
 
-    .caso{
+    .tendencias {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: var(--primario);
+        .panel{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 95%;
+            font-weight: bold;
+            section{
+                width: 400px;
+                height: 100px;
+                max-width: 100%;
+                margin: 10px 15px;
+                h3{
+                    text-decoration: underline;
+                }
+                p{
+                    text-align: justify;
+                }
+            }
+        }
+    }
+    .tend_1{
+        background-color: var(--secundario);
+    }
+    .tend_2{
+        background-color: var(--error);
+        color: var(--fondo);
+    }
+    .tend_3{
+        background-color: var(--success);
+        color: var(--secundario);
+    }
+    .tend_4{
+        position: relative;
+        background-color: #00000090;
+        color: var(--fondo);
+        border-radius: 5px;
+        img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+            border-radius: 5px;
+        }
+        h3{
+            text-align: center;
+        }
+        p{
+            padding: 5px;
+        }
+    }
+
+    .caso {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         margin: 0;
-        img{
+
+        img {
             width: 200px;
             border-radius: 50%;
             margin: 10px;
         }
-        h2{
+
+        h2 {
             max-width: 95%;
             margin: 10px 0;
             text-align: justify;
         }
-        h3{
+
+        h3 {
             width: 95%;
         }
-        p{
+
+        p {
             text-align: justify;
             width: 95%;
             margin: 10px 0;
         }
     }
-    .caso_1{
+
+    .caso_1 {
         background-color: var(--error);
         color: var(--secundario);
     }
-    .caso_2{
+
+    .caso_2 {
         background-color: var(--primario);
         color: var(--hover);
     }
-    .caso_3{
+
+    .caso_3 {
         background-color: var(--success);
         color: orange;
     }
-    .caso_4{
+
+    .caso_4 {
         background-color: var(--secundario);
         color: var(--primario);
     }
@@ -189,7 +263,8 @@ main {
             justify-content: center;
             align-items: center;
             box-sizing: border-box;
-            i{
+
+            i {
                 position: absolute;
             }
 
@@ -637,23 +712,24 @@ footer {
 
 @keyframes subir {
     0% {
-      transform: scale(0) translateY(0);
-      opacity: 1;
+        transform: scale(0) translateY(0);
+        opacity: 1;
     }
+
     50% {
-      transform: scale(1.5) translateY(-130px);
-      opacity: 0.5;
+        transform: scale(1.5) translateY(-130px);
+        opacity: 0.5;
     }
+
     100% {
-      transform: scale(0) translateY(-100px);
-      opacity: 0;
+        transform: scale(0) translateY(-100px);
+        opacity: 0;
     }
-  }
-  
-  .fa-heart {
+}
+
+.fa-heart {
     position: absolute;
     color: red;
     animation: subir 5s infinite;
     animation-timing-function: cubic-bezier(1, 0, 0, 1);
-  }
-  
+}
