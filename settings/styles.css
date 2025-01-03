@@ -162,12 +162,19 @@ main {
                 }
             }
         }
+        .__panel div{
+            width: 100%;
+        }
         .panel_3{
             background-color: var(--hover);
         }
     }
     .charla_1{
         background-color: #00c624;
+    }
+    .charla_2{
+        background-color: #ffff14;
+        color: #4f5e5e;
     }
 
     .tendencias {
