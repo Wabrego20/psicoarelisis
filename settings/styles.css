@@ -126,77 +126,103 @@ main {
         }
 
     }
-    .charlas{
+
+    .charlas {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        h2{
+
+        h2 {
             text-align: center;
             max-width: 95%;
             margin: 10px 0;
         }
-        .panel{
+
+        .panel {
             display: flex;
             justify-content: center;
             align-items: center;
             width: 95%;
-            img{
+
+            img {
                 margin: 5px 15px;
                 border-radius: 50%;
                 width: 150px;
                 height: 150px;
             }
-            p{
+
+            p {
                 font-weight: bold;
                 text-align: justify;
             }
-            div{
+
+            div {
                 margin: 10px;
                 max-width: 100%;
                 padding: 5px;
                 box-sizing: border-box;
-                p{
+
+                p {
                     text-align: justify;
                 }
             }
-            .reflexiones{
+
+            .reflexiones {
                 border-radius: 5px;
             }
-            .__reflexiones1{
+
+            .__reflexiones1 {
                 background-color: var(--fondo);
             }
-            .__reflexiones2{
+
+            .__reflexiones2 {
                 background-color: var(--hover);
             }
-            .__reflexiones3{
+
+            .__reflexiones3 {
                 background-color: #c3ffc8;
             }
+
+            .__reflexiones4 {
+                background-color: #fed016;
+            }
         }
-        .__panel div{
+
+        .__panel div {
             width: 100%;
-            ul{
+
+            ul {
                 box-sizing: border-box;
                 padding-left: 20px;
                 text-align: justify;
                 font-style: oblique;
             }
         }
-        .panel_3{
+
+        .panel_3 {
             background-color: var(--hover);
         }
     }
-    .charla_1{
+
+    .charla_1 {
         background-color: #00c624;
     }
-    .charla_2{
+
+    .charla_2 {
         background-color: #ffff14;
         color: #4f5e5e;
     }
-    .charla_3{
+
+    .charla_3 {
         background-color: #bfff00;
         color: #039d9d;
+    }
+
+    .charla_4 {
+        background-color: #ffe1cf;
+        color: #2a09ff;
     }
 
     .tendencias {
@@ -206,54 +232,65 @@ main {
         align-items: center;
         flex-direction: column;
         color: var(--primario);
-        .panel{
+
+        .panel {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
             width: 95%;
             font-weight: bold;
-            section{
+
+            section {
                 width: 400px;
                 height: 100px;
                 max-width: 100%;
                 margin: 10px 15px;
-                h3{
+
+                h3 {
                     text-decoration: underline;
                 }
-                p{
+
+                p {
                     text-align: justify;
                 }
             }
         }
     }
-    .tend_1{
+
+    .tend_1 {
         background-color: var(--secundario);
     }
-    .tend_2{
+
+    .tend_2 {
         background-color: var(--error);
         color: var(--fondo);
     }
-    .tend_3{
+
+    .tend_3 {
         background-color: var(--success);
         color: var(--secundario);
     }
-    .tend_4{
+
+    .tend_4 {
         position: relative;
         background-color: #00000090;
         color: var(--fondo);
         border-radius: 5px;
-        img{
+
+        img {
             width: 100%;
             height: 100%;
             position: absolute;
             z-index: -1;
             border-radius: 5px;
         }
-        h3{
+
+        h3 {
             text-align: center;
         }
-        p{
+
+        p {
             padding: 5px;
         }
     }
