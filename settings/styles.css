@@ -161,9 +161,27 @@ main {
                     text-align: justify;
                 }
             }
+            .reflexiones{
+                border-radius: 5px;
+            }
+            .__reflexiones1{
+                background-color: var(--fondo);
+            }
+            .__reflexiones2{
+                background-color: var(--hover);
+            }
+            .__reflexiones3{
+                background-color: #c3ffc8;
+            }
         }
         .__panel div{
             width: 100%;
+            ul{
+                box-sizing: border-box;
+                padding-left: 20px;
+                text-align: justify;
+                font-style: oblique;
+            }
         }
         .panel_3{
             background-color: var(--hover);
@@ -175,6 +193,10 @@ main {
     .charla_2{
         background-color: #ffff14;
         color: #4f5e5e;
+    }
+    .charla_3{
+        background-color: #bfff00;
+        color: #039d9d;
     }
 
     .tendencias {
