@@ -188,14 +188,20 @@ main {
             .__reflexiones4 {
                 background-color: #fed016;
             }
+            .__reflexiones5 {
+                background-color: #7653f3;
+            }
+            .__reflexiones6 {
+                background-color: #f35353;
+            }
         }
 
         .__panel div {
             width: 100%;
 
-            ul {
+            ul, ol {
                 box-sizing: border-box;
-                padding-left: 20px;
+                padding-left: 17px;
                 text-align: justify;
                 font-style: oblique;
             }
@@ -223,6 +229,14 @@ main {
     .charla_4 {
         background-color: #ffe1cf;
         color: #2a09ff;
+    }
+    .charla_5 {
+        background-color: #2f2e2d;
+        color: #f07f39;
+    }
+    .charla_6 {
+        background-color: #757494;
+        color: #ffffff;
     }
 
     .tendencias {
