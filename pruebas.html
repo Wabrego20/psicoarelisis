@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | PsicoArelisSis</title>
+    <link rel="stylesheet" href="settings/styles.css">
+    <link rel="stylesheet" href="settings/fontawesome/css/all.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <img src="img/logoApp.PNG" alt="logo" class="logoApp">
+        <nav class="menu">
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="sobreMi.html">Sobre Mí</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="index.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a class="active" href="pruebas.html">Pruebas</a></li>
+            </ul>
+        </nav>
+        <a href="cita.html" class="btn __cita">Pide tu cita</a>
+    </header>
+    <main>
+        <div class="name_page">
+            <h1>Pruebas</h1>
+        </div>
+
+        <div class="panel_pruebas">
+            <button type="button" id="abrirPrueba" class="boton-prueba">
+                <span class="prueba-icono" aria-hidden="true">Ψ</span>
+                <span class="prueba-texto">
+                    <span class="prueba-etiqueta">PRUEBA PSICOLÓGICA</span>
+                    <strong>Escala de autoestima para adultos</strong>
+                    <span>Coopersmith</span>
+                </span>
+                <span class="prueba-flecha" aria-hidden="true">→</span>
+            </button>
+
+            <button type="button" id="abrirPrueba" class="boton-prueba">
+                <span class="prueba-icono" aria-hidden="true">Ψ</span>
+                <span class="prueba-texto">
+                    <span class="prueba-etiqueta">PRUEBA PSICOLÓGICA</span>
+                    <strong>Cibado de Ansiedad</strong>
+                    <span>Coopersmith</span>
+                </span>
+                <span class="prueba-flecha" aria-hidden="true">→</span>
+            </button>
+            <button type="button" id="abrirPrueba" class="boton-prueba">
+                <span class="prueba-icono" aria-hidden="true">Ψ</span>
+                <span class="prueba-texto">
+                    <span class="prueba-etiqueta">PRUEBA PSICOLÓGICA</span>
+                    <strong>Cibado de Depresión</strong>
+                    <span>Coopersmith</span>
+                </span>
+                <span class="prueba-flecha" aria-hidden="true">→</span>
+            </button>
+        </div>
+
+        <div class="pruebas" id="modalPrueba" hidden>
+            <table class="autoestima">
+                <thead>
+                    <tr>
+                        <th colspan="4">
+                            <button type="button" id="cerrarPrueba" class="cerrar-prueba"
+                                aria-label="Cerrar prueba">✕</button>
+                            <h1>ESCALA AUTOESTIMA PARA ADULTOS <br>COOPERSMITH</h1>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="separar">
+                        <td colspan="4"></td>
+                    </tr>
+                    <tr class="titulo">
+                        <td colspan="4">
+                            <h3>Datos Generales</h3>
+                        </td>
+                    </tr>
+                    <tr class="borde">
+                        <td>Nombre:</td>
+                        <td colspan="3"><input type="text" name="" id=""></td>
+                    </tr>
+                    <tr class="borde">
+                        <td>Edad:</td>
+                        <td><input type="number" name="" id="" min="18"></td>
+                        <td>Sexo:</td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">Seleccione</option>
+                                <option value="">M</option>
+                                <option value="">F</option>
+                            </select>
+                        </td>
+                    </tr class="borde">
+                    <tr class="borde">
+                        <td>Escolaridad:</td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">Seleccione</option>
+                                <option value="">No Asistió</option>
+                                <option value="">Preescolar</option>
+                                <option value="">Primaria</option>
+                                <option value="">Secundaria</option>
+                                <option value="">Técnico Superior</option>
+                                <option value="">Universidad</option>
+                                <option value="">Postgrado</option>
+                            </select>
+                        </td>
+                        <td>Estado Civil:</td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">Seleccione</option>
+                                <option value="">Casado(a)</option>
+                                <option value="">Soltero(a)</option>
+                                <option value="">Viudo(a)</option>
+                                <option value="">Unión Libre</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="borde">
+                        <td>Fecha:</td>
+                        <td><input type="date" name="" id=""></td>
+                        <td>Examinador:</td>
+                        <td>Arelis Quintero</td>
+                    </tr>
+
+                    <tr class="separar">
+                        <td colspan="4"></td>
+                    </tr>
+                    <tr class="titulo">
+                        <td colspan="4">
+                            <h3>Instrucciones</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"> Coloque el número 1 (uno) en <b>V</b> o <b>F</b>, según coincida la respuesta
+                            de la persona evaluada. Al final verifique que no ha dejado de responder algún item.</td>
+                    </tr>
+                    <tr class="separar">
+                        <td colspan="4"></td>
+                    </tr>
+                    <tr class="titulo">
+                        <td colspan="4">
+                            <h3>Registro de Respuestas</h3>
+                        </td>
+                    </tr>
+                    <tr class="borde">
+                        <th>N°</th>
+                        <th>Enunciado</th>
+                        <th>V</th>
+                        <th>F</th>
+                    </tr>
+                    <tr class="borde">
+                        <td>1</td>
+                        <td>Usualmente las cosas no me molestan</td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                    </tr>
+                    <tr class="borde">
+                        <td>2</td>
+                        <td>Me resulta difícil hablar frente a un grupo.</td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                    </tr>
+                    <tr class="borde">
+                        <td>3</td>
+                        <td>Hay muchas cosas de mi que cambiaría si pusiese.</td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                    </tr>
+                    <tr class="borde">
+                        <td>4</td>
+                        <td>Puedo tomar decisiones sin mayor dificultad.</td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                    </tr>
+                    <tr class="borde">
+                        <td>5</td>
+                        <td>Soy muy divertido(a).</td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                    </tr>
+                    <tr class="borde">
+                        <td>6</td>
+                        <td>Me altero fácilmente en casa.</td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                    </tr>
+                    <tr class="borde">
+                        <td>7</td>
+                        <td>Me toma mucho tiempo acostumbrarme a cualquier cosa nueva.</td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                    </tr>
+                    <tr class="borde">
+                        <td>8</td>
+                        <td>Soy popular entre las personas de mi edad.</td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                    </tr>
+                    <tr class="borde">
+                        <td>9</td>
+                        <td>Generalmente mi familia considera mis sentimientos.</td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                    </tr>
+                    <tr class="borde">
+                        <td>10</td>
+                        <td>Me rindo fácilmente.</td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                    </tr>
+                    <tr class="borde">
+                        <td>11</td>
+                        <td>Mi familia espera mucho de mi.</td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                    </tr>
+                    <tr class="borde">
+                        <td>12</td>
+                        <td>Es bastante difícil ser "Yo mismo".</td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                    </tr>
+                    <tr class="borde">
+                        <td>13</td>
+                        <td>Me siento muchas veces confundido.</td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                    </tr>
+                    <tr class="borde">
+                        <td>14</td>
+                        <td>La gente usualmente sigue mis ideas.</td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                    </tr>
+                    <tr class="borde">
+                        <td>15</td>
+                        <td>Tengo una pobre opinión sobre mí mismo.</td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                    </tr>
+                    <tr class="borde">
+                        <td>16</td>
+                        <td>Hay muchas ocaciones que me gustaría irme de mi casa.</td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                    </tr>
+                    <tr class="borde">
+                        <td>17</td>
+                        <td>Frecuentemente me siento descontento con mi trabajo.</td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                    </tr>
+                    <tr class="borde">
+                        <td>18</td>
+                        <td>No estoy tan simpático como otras personas.</td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                    </tr>
+                    <tr class="borde">
+                        <td>19</td>
+                        <td>Si tengo algo que decir usualmente lo digo.</td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                    </tr>
+                    <tr class="borde">
+                        <td>20</td>
+                        <td>Mi familia me comprende.</td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                    </tr>
+                    <tr class="borde">
+                        <td>21</td>
+                        <td>Muchas personas son más preferidas que yo.</td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                    </tr>
+                    <tr class="borde">
+                        <td>22</td>
+                        <td>Muchas veces siento como si mi familia me estuviese presionando.</td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                    </tr>
+                    <tr class="borde">
+                        <td>23</td>
+                        <td>Muchas veces me siento desalentado con lo que hago.</td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                    </tr>
+                    <tr class="borde">
+                        <td>24</td>
+                        <td>Frecuentemente desearía ser otra persona.</td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                    </tr>
+                    <tr class="borde">
+                        <td>25</td>
+                        <td>No soy digno de confianza.</td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                        <td><input type="number" name="" id="" min="1" max="1"
+                                oninput="if (this.value !== '1') this.value = ''"></td>
+                    </tr>
+                    <tr class="separar">
+                        <td colspan="4"></td>
+                    </tr>
+                    <tr class="titulo">
+                        <td colspan="4">
+                            <h3>Resultados</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Subescala</th>
+                        <th>Puntaje Bruto</th>
+                        <th>Puntaje SEI</th>
+                        <th>Categoría</th>
+                    </tr>
+                    <tr class="borde">
+                        <td><b>Sí mismo</b></td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>?</td>
+                    </tr>
+                    <tr class="borde">
+                        <td><b>Social</b></td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>?</td>
+                    </tr>
+                    <tr class="borde">
+                        <td><b>Familia</b></td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>?</td>
+                    </tr>
+                    <tr class="resultado borde">
+                        <td>
+                            <h3>Escala General</h3>
+                        </td>
+                        <td>
+                            <h3>0</h3>
+                        </td>
+                        <td>
+                            <h3>0</h3>
+                        </td>
+                        <td>
+                            <h3>?</h3>
+                        </td>
+                    </tr>
+
+                    <tr class="separar">
+                        <td colspan="4"></td>
+                    </tr>
+                    <tr class="titulo">
+                        <td colspan="4">
+                            <h3>Criterios de referencia del documento</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2" class="mitad">Puntuación</th>
+                        <th colspan="2" class="mitad">Clasificación</th>
+                    </tr>
+                    <tr class="borde">
+                        <td colspan="2">0 a 45</td>
+                        <td colspan="2">Baja Autoestima</td>
+                    </tr>
+                    <tr class="borde">
+                        <td colspan="2">46 a 74</td>
+                        <td colspan="2">Autoestima Promedio</td>
+                    </tr>
+                    <tr class="borde">
+                        <td colspan="2">75 a 100</td>
+                        <td colspan="2">Alta Autoestima</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <h6>© 2024 PsicoArelisSis • Política de privacidad | Aviso Legal | Política de cookies. <br>Una colaboracion de
+            William Abrego y Arelis Quintero.</h6>
+        <div class="redes">
+            <i class="fa-brands fa-whatsapp" title="clic para ir a whatsapp"></i>
+            <i class="fa-brands fa-instagram" title="clic para ir a instagram"></i>
+            <i class="fa-brands fa-facebook" title="clic para ir a facebook"></i>
+            <i class="fa-brands fa-x-twitter" title="clic para ir a x-twitter"></i>
+            <i class="fa-brands fa-youtube" title="clic para ir a youtube"></i>
+            <i class="fa-brands fa-linkedin" title="clic para ir a linkedin"></i>
+            <i class="fa-brands fa-telegram" title="clic para ir a telegram"></i>
+        </div>
+    </footer>
+    <script src="settings/script.js"></script>
+</body>
+
+</html>
